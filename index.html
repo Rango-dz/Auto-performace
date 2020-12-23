@@ -94,36 +94,28 @@
 												</path>
 											</svg> Close
 										</div>
-										<a href="https://moroi.desgin"
+										<a href="/"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
 											<span class="font-light mt-1 text-sm sm:text-gray-500 sm:mt-0">ACCUEIL</span>
 										</a>
-										<a href="https://moroi.desgin/posts"
+										<a href="#PRESENTATION"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
 											<span class="font-light mt-1 text-sm sm:text-gray-500 sm:mt-0">PRÉSENTATION</span>
 										</a>
-										<a href="https://moroi.desgin/questions"
+										<a href="#services"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
 											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">SERVICES</span>
-										</a>
-										<a href="https://moroi.desgin/more"
-											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
-											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">RÉALISATIONS</span>
 										</a>
 										<a href="https://moroi.desgin/questions"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
 											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">TÉMOIGNAGES</span>
 										</a>
-										<a href="https://moroi.desgin/more"
+										<a href="#contacter"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
-											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">CONTACT</span>
+											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">Nous
+												contacter</span>
 										</a>
-										<a href="https://moroi.desgin/questions"
-											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
-											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">24/24 FILE
-												SERVICE</span>
-										</a>
-										<a href="https://moroi.desgin/more"
+										<a href="#faq"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
 											<span class="mt-1 text-sm font-light sm:text-gray-500 sm:mt-0">FAQ</span>
 										</a>
@@ -157,7 +149,7 @@
 							</svg>
 
 						</a>
-						<a href=""
+						<a href="#mc_embed_signup"
 							class="flex items-center justify-center text-gray-500 text-center font-bold text-xs no-underline hover:text-gray-200 mx-3 w-10 h-10">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
 								class="bi bi-clock-fill" viewBox="0 0 16 16">
@@ -177,11 +169,12 @@
 					<div class="z-20 w-full overflow-x-hidden text-gray-500 font-bold sm:overflow-x-hidden">
 						<div class="container flex items-center justify-between max-h-screen pt-1 mx-auto mt-2">
 							<div class="flex justify-start ml-5 sm:ml-0">
-								<a href="https://moroi.desgin/more"
+								<a href="/"
 									class="relative flex items-center pr-4 text-sm font-bold border-r border-moroi-Realred hover:text-gray-100">ACCUEIL</a>
-								<a href="/source" class="pl-2 p-2 ml-1 text-sm hover:text-gray-100">SERVICES</a>
-								<a href="/show" class="p-2 text-sm hover:text-gray-100">RÉALISATIONS</a>
-								<a href="/show" class="p-2 text-sm hover:text-gray-100">CONTACT</a>
+								<a href="#PRESENTATION" class="pl-2 p-2 ml-1 text-sm hover:text-gray-100">PRÉSENTATION</a>
+								<a href="#services" class="p-2 text-sm hover:text-gray-100">SERVICES</a>
+								<a href="#faq" class="p-2 text-sm hover:text-gray-100">FAQ</a>
+								<a href="#brands" class="p-2 text-sm hover:text-gray-100">Les mark</a>
 							</div>
 							<div class="ml-2 sm:ml-0">
 							</div>
@@ -219,7 +212,7 @@
 	</div>
 
 	<!-- services -->
-	<div
+	<div id="services"
 		class="container mt-10 px-7 lg:px-28 xl:w-4/5 flex flex-wrap flex-col gap-5 lg:grid lg:grid-cols-2 lg:auto-cols-auto">
 
 		<div class="bg-moroi-stack flex flex-wrap flex-col p-10 rounded-3xl ele-1">
@@ -410,7 +403,7 @@
 	</div>
 
 	<!-- car tabs -->
-	<div x-data="{
+	<div id="brands" x-data="{
 		openTab: 5,
 		activeClasses: 'flex flex-row justify-center border border-moroi-stack transition-colors duration-300 bg-gradient-to-t from-moroi-stack to-gray-600 shadow rounded-md p-5 text-moroi-Realred ele-1 bg-moroi-stack cursor-pointer',
 		inactiveClasses: 'opacity-75 flex flex-row justify-center border border-moroi-stack shadow rounded-md p-5 text-white ele-1 transition-colors duration-300 bg-moroi-stack cursor-pointer bg-gradient-to-t hover:from-gray-700 hover:to-gray-600 hover:opacity-100'
@@ -3031,7 +3024,7 @@
 	</div>
 
 	<!-- component FAQ -->
-	<div>
+	<div id="faq">
 		<section class="text-white text-opacity-75 ring-0">
 			<div class="container px-5 py-20 mx-auto">
 				<div class="text-center mb-10">
@@ -3166,7 +3159,7 @@
 		<!-- location and map -->
 		<div>
 
-			<div class="">
+			<div id="emplacment">
 				<div class="w-1/2 md:w-2/3 lg:w-full" id='map' style=' height: 400px;'></div>
 				<script>
 					mapboxgl.accessToken =
