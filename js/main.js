@@ -2,11 +2,11 @@ var scroller = scrollama();
 
 scroller
   .setup({
-    step: 'div',
+    step: '.anim',
     offset: 0.85
   })
   .onStepEnter(function(response) {
-    response.element.classList.add('tracking');
+    response.element.classList.add('appear');
   });
 
 window.addEventListener('resize', scroller.resize);

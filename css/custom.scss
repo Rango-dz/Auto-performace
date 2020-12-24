@@ -109,25 +109,45 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
- .vibrate {
-   animation: vibrate-1 0.3s infinite linear normal both;
- }
+ .anim {
 
- .tracking {
-   animation: tracking-in-expand 0.7s normal;
- }
+  // Hide all animated elements
+  [class*="anim-delay-"] {
+    opacity: 0;
+  }
 
- .slideleft {
-   animation: slide-in-left 0.85s normal;
- }
+  &.appear {
 
- .slideright {
-  animation: slide-in-right 0.85s normal;
- }
+    [class*="anim-delay-"]{
+      animation-duration: 0.75s;
+      animation-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+      animation-fill-mode: both;
+    }
 
- .scale {
-   animation: scale-in-hor-center 0.8s normal;
- }
+    // Fade in bottom animation
+    &.vibrate [class*="anim-delay-"]  {
+      animation-name: vibrate-1;
+    }
+
+    &.trackin [class*="anim-delay-"] {
+      animation-name: tracking-in-expand;
+    }
+
+    &.slideleft [class*="anim-delay-"] {
+      animation-name: slide-in-left 0.85 normal both;
+    }
+
+    &.slideright [class*="anim-delay-"] {
+      animation-name: slide-in-right 0.85 normal both;
+    }
+
+    &.scale [class*="anim-delay-"] {
+      animation-name: scale-in-hor-center 0.85 normal both;
+    }
+
+  }
+
+}
 
  @-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}
  @-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}
