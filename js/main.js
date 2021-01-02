@@ -10,3 +10,10 @@ scroller
   });
 
 window.addEventListener('resize', scroller.resize);
+
+
+var infotabs = document.querySelectorAll('[id^=info]');
+
+infotabs.addEventListener('focus', (event) => {
+  event.target.classList.add("border border-moroi-Realred");
+});
