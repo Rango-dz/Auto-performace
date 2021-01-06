@@ -1,125 +1,121 @@
-:root{
-  --iconsvg: #1a1a1b;
+:root {
+	--iconsvg: #1a1a1b;
 }
 
 body {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: Gilroy, Gilroy-light, monospace;
-  src: url(/public/css/Gilroy.otf);
-  src: url(/public/css/Gilroy-Light.otf);
+	font-family: Gilroy, Gilroy-light, monospace;
+	src: url(/public/css/Gilroy.otf);
+	src: url(/public/css/Gilroy-Light.otf);
 }
 
 .ele-1 {
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.20), 
-              0px 1px 1px -1px rgba(0,0,0,0.14), 
-              0px 1px 1px -2px rgba(0,0,0,0.12);
+	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px -1px rgba(0, 0, 0, 0.14), 0px 1px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
 .mmm {
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.20), 
-              0px 1px 1px 0px rgba(0,0,0,0.14), 
-              0px 1px 3px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .moroi {
-  background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 @supports (
   backdrop-filter: blur(20px);
 ) {
-.moroi {
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: saturate(180%)blur(20px);
-}  
+	.moroi {
+		background-color: rgba(255, 255, 255, 0.7);
+		backdrop-filter: saturate(180%) blur(20px);
+	}
 }
 
 .googlebg {
-  background: rgba(32, 33, 36, 0.059);
-  border-radius: 100%;
-  padding: 0.8rem;
-  transform: scale(1);
+	background: rgba(32, 33, 36, 0.059);
+	border-radius: 100%;
+	padding: 0.8rem;
+	transform: scale(1);
 }
 
 .ele-1 {
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.20), 
-              0px 1px 1px 0px rgba(0,0,0,0.14), 
-              0px 1px 3px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .video-title {
-  background: #000;
+	background: #000;
 }
 
-@media only screen and (min-width : 768px) {
-  .video-wrapper {
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%;
-  }
+@media only screen and (min-width: 768px) {
+	.video-wrapper {
+		height: 0;
+		padding-bottom: 56.25%;
+		position: relative;
+		width: 100%;
+	}
 
-  .video-wrapper video {
-    height: 100%;
-    position: absolute;
-      top: 0;
-      left: 0;
-    width: 100%;
-  }
+	.video-wrapper video {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
 
-  .video-title {
-    background-color: rgba(0,0,0, .7);
-    position: absolute;
-      top: 50%;
-      left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-  }
+	.video-title {
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 99;
+	}
 }
 
 .swiper-container {
-  width: 100vw;
-  height: 90vh !important;
-  background-color: #0e0e0e;
+	width: 100vw;
+	height: auto;
+	background-color: #0e0e0e;
 }
 
 .swiper-slide {
 }
 
-
 .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear alternate infinite;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear alternate infinite;
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 822;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+	from {
+		stroke-dashoffset: 822;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 .icon-service {
-  background: linear-gradient(135deg,#3f3f3f,#2d2d2d);
+	background: linear-gradient(135deg, #3f3f3f, #2d2d2d);
 }
 .icon-service:hover {
-  background: linear-gradient(135deg, #2d2d2d, #3f3f3f);
+	background: linear-gradient(135deg, #2d2d2d, #3f3f3f);
 }
 .icon-service-red {
-  background: linear-gradient(-35deg, #ff234b, #ff0030);
+	background: linear-gradient(-35deg, #ff234b, #ff0030);
 }
 
 .icon-service-red:hover {
-  background: linear-gradient(-35deg, #ff0030, #ff234b);
-  transition: 0.5s ease-out;
-  transition: 0.9s linear;
+	background: linear-gradient(-35deg, #ff0030, #ff234b);
+	transition: 0.5s ease-out;
+	transition: 0.9s linear;
 }
 
 .wow {
-  visibility: hidden;
+	visibility: hidden;
 }

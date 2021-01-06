@@ -13,11 +13,11 @@
 	<meta name="googlebot" content="index,follow">
 	<link rel="canonical" href="https://auto-performance.org" />
 
-	<link rel="stylesheet" inline href="/css/main.css">
 	<link rel="stylesheet" inline href="/css/swiper-bundle.min.css">
+	<link rel="stylesheet" inline href="/css/main.css">
 	<link rel="stylesheet" inline href="/css/animate.min.css">
 	<link rel="stylesheet" inline href="/css/custom.css">
-	<script inline src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
 	<link inline href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
 	<title>Auto performance Guelma [Tuning] - algeria</title>
 </head>
@@ -28,7 +28,7 @@
 			<div class="relative z-20 flex flex-col h-full px-5 py-1 mx-auto xl:px-2 ele-1 border-b-4 border-moroi-stack">
 				<div id="logo-center" onclick="returnBack()"
 					class="absolute top-0 left-0 z-40 flex items-center hidden inline-block py-2 pl-2 pr-4 transition-all duration-500 opacity-0 cursor-pointer ease group">
-					<img class="w-40 h-40" inline src="/img/Auto performance Metal+red-carbon.svg" alt="">
+					<img class="w-40 h-40" src="" alt="">
 				</div>
 				<div class="absolute top-0 right-0 z-50 py-3 mr-2 transition-opacity duration-300 flex ease hidden opacity-0"
 					id="closeHeader">
@@ -45,31 +45,19 @@
 					</div>
 				</div>
 				<div class="flex items-center justify-between h-12 transition-opacity duration-150 ease-out fade-out container">
-					<div
-						class="absolute left-0 flex items-center justify-center w-full sm:justify-start sm:relative sm:left-auto sm:w-64">
-						<a href="https://auto-performance.org" class="flex items-center inline-block py-2 pr-4 cursor-pointer group">
-							<svg viewBox="0 0 520 460" class="w-10 h-10 text-black fill-current " xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink">
-								<defs>
-									<path
-										d="M81.079 81.293c2.351 40.815-19.808 63.171-51.101 87.082 79.261-53.553 176.523-95.401 271.687-104.232 166.088-15.338 205.72 189.752 67.267 233.939-50.059 15.858-100.118 31.71-150.177 47.831-11.74-31.973-25.035-63.427-35.206-95.915-24.767-77.206 111.854-94.099 147.578-97.218-60.745 15.08-74.836 32.23-69.875 56.404 3.126 13.257 7.044 28.076 10.945 41.586 26.863-7.533 53.452-15.334 80.314-23.128 40.93-11.704 38.33-100.07-25.559-93.053C205.19 147.836 102.46 201.903 0 262.73c16.94-8.057 100.379-51.724 111.59-23.396 33.896 86.556 96.467 155.703 188.767 208.993 142.367-82.405 214.329-202.489 219.277-367.034C453.15 27.098 376.689.001 300.261.001S147.436 27.098 81.079 81.293"
-										id="a"></path>
-								</defs>
-								<g fill-rule="evenodd">
-									<mask id="b">
-										<use xlink:href="#a"></use>
-									</mask>
-									<use xlink:href="#a"></use>
-									<path
-										d="M81.079 81.293c2.351 40.815-19.808 63.171-51.101 87.082 79.261-53.553 176.523-95.401 271.687-104.232 166.088-15.338 205.72 189.752 67.267 233.939-50.059 15.858-100.118 31.71-150.177 47.831-11.74-31.973-25.035-63.427-35.206-95.915-24.767-77.206 111.854-94.099 147.578-97.218-60.745 15.08-74.836 32.23-69.875 56.404 3.126 13.257 7.044 28.076 10.945 41.586 26.863-7.533 53.452-15.334 80.314-23.128 40.93-11.704 38.33-100.07-25.559-93.053C205.19 147.836 102.46 201.903 0 262.73c16.94-8.057 100.379-51.724 111.59-23.396 33.896 86.556 96.467 155.703 188.767 208.993 142.367-82.405 214.329-202.489 219.277-367.034C453.15 27.098 376.689.001 300.261.001S147.436 27.098 81.079 81.293">
-									</path>
-								</g>
-							</svg>
+					<div	class="absolute left-0 flex items-center justify-center w-full sm:justify-start sm:relative sm:left-auto sm:w-64">
+						<a href="https://auto-performance.org" class="md:hidden flex items-center inline-block py-2 pr-4 cursor-pointer group">
+							<img src="/img/Untitled-3@0,1x.png" alt="">
 						</a>
-						<div class="absolute top-0 left-0 z-20 flex items-center w-auto h-full ml-2 sm:relative sm:ml-0 sm:w-full">
+						<a href="https://auto-performance.org" class="hidden md:inline-block flex items-center inline-block py-2 pr-4 cursor-pointer group">
+							<img src="/img/Untitled-4@2x.png" alt="">
+						</a>
+
+					
+		<div class="absolute top-0 left-0 z-20 flex items-center w-auto h-full ml-2 sm:relative sm:ml-0 sm:w-full">
 							<div x-data="{ open : false }" x-on:click="open = !open" x-on:click.away="open = false"
 								class="relative flex items-center justify-start inline-block w-auto h-10 pl-5 text-gray-500 rounded-md cursor-pointer sm:w-full hover:text-gray-200 min-w-auto select-none ">
-								<span class="text-xs font-medium font-bold leading-none sm:text-sm ">More</span>
+								<span class="font-medium font-bold leading-none sm:text-sm ">More</span>
 								<svg class="right-0 w-5 mt-1 ml-0 mr-1 text-moroi-Realred fill-current sm:ml-1 sm:mr-2"
 									viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
 									<g>
@@ -97,7 +85,7 @@
 										</div>
 										<a href="/"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
-											<span class="font-light mt-1 text-sm sm:text-gray-500 sm:mt-0">ACCUEIL</span>
+											<span class="font-light mt-1 sm:text-gray-500 sm:mt-0">ACCUEIL</span>
 										</a>
 										<a href="#PRESENTATION"
 											class="flex flex-col items-center justify-center w-full h-full px-5 sm:h-10 sm:flex-row sm:justify-start hover:bg-gray-100">
@@ -126,12 +114,16 @@
 
 						</div>
 					</div>
+					
 
 
 
-					<div id="nav_right_container anim vibrate"
-						class="absolute right-0 flex items-center justify-end w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
-						<a href=""
+
+					<div class="absolute right-0 top-2 grid grid-rows-1 md:grid-rows-2 place-content-center place-items-center gap-2 w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
+
+					<div id="nav_right_container"
+						class="flex items-center justify-end w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
+						<a href="#phone"
 							class="md:hidden flex items-center justify-center text-gray-500 text-center font-bold text-xs no-underline hover:text-gray-200 ml-3 w-10 h-10">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
 								class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -162,20 +154,22 @@
 							data-wow-duration="2s" data-wow-delay="1s">Nous contacter
 						</a>
 					</div>
+					<div class=" sm:mr-0 sm:relative sm:right-auto hidden md:inline-block text-white font-semibold">
+								Tel : +213 0 670-16-80-60 
+					</div>
+
+				</div>
 				</div>
 
 				<div class="relative z-0">
-					<div class="z-20 w-full overflow-x-hidden text-gray-500 font-bold sm:overflow-x-hidden">
+					<div class="z-20 w-full overflow-x-hidden text-gray-300 font-bold sm:overflow-x-hidden">
 						<div class="container flex items-center justify-between max-h-screen pt-1 mx-auto mt-2">
 							<div class="flex justify-start ml-5 sm:ml-0">
-								<a href="/"
-									class="relative flex items-center pr-4 text-sm font-bold border-r border-moroi-Realred hover:text-gray-100">ACCUEIL</a>
-								<a href="#PRESENTATION" class="pl-2 p-2 ml-1 text-sm hover:text-gray-100">PRÉSENTATION</a>
-								<a href="#services" class="p-2 text-sm hover:text-gray-100">SERVICES</a>
-								<a href="#faq" class="p-2 text-sm hover:text-gray-100">FAQ</a>
-								<a href="#brands" class="p-2 text-sm hover:text-gray-100">MARQUES</a>
-							</div>
-							<div class="ml-2 sm:ml-0">
+								<a href="/" class="relative flex items-center pr-4 text-sm font-bold border-r border-moroi-Realred hover:text-gray-100">ACCUEIL</a>
+								<a href="#PRESENTATION" class="pl-2 p-2 ml-1 hover:text-gray-100 sm:text-sm lg:text-base">PRÉSENTATION</a>
+								<a href="#services" class="p-2  hover:text-gray-100 md:text-sm lg:text-base">SERVICES</a>
+								<a href="#faq" class="p-2  hover:text-gray-100 md:text-sm lg:text-base">FAQ</a>
+								<a href="#brands" class="p-2 hover:text-gray-100 md:text-sm lg:text-base">MARQUES</a>
 							</div>
 						</div>
 					</div>
@@ -186,16 +180,16 @@
 	</div>
 
 	<!-- background slide -->
-	<div class="swiper-container ele-1 mt-2 border-b-4 border-moroi-stack max-w-full">
+	<div class="swiper-container ele-1 mt-3 border-b-4 border-moroi-stack max-w-full">
 		<div class="swiper-wrapper ele-1">
-			<div class="swiper-slide"><img class="w-screen" inline src="/img/chip@0.75x.png" 
+			<div class="swiper-slide"><img class="w-screen" src="/img/chipx.png" 
 						alt="">
 			</div>
-			<div class="swiper-slide"><img class="w-screen" inline src="/img/puissance@0.75x.png"
+			<div class="swiper-slide"><img class="w-screen" src="/img/puissanceh@0.75x.png"
 					alt=""></div>
-			<div class="swiper-slide"><img class="w-screen" inline src="/img/decalaminage@0.75x.png"
+			<div class="swiper-slide"><img class="w-screen" src="/img/DECALAMINAGE.png"
 					alt=""></div>		
-			<div class="swiper-slide"><img class="w-screen" inline src="/img/prog@0.75x.png"
+			<div class="swiper-slide"><img class="w-screen" src="/img/programationx.png"
 					alt=""></div>
 		</div>
 	</div>
@@ -235,8 +229,7 @@
 
 		<h1 id="PRESENTATION"
 			class="anim-delay-0 text-3xl md:text-5xl lg:text-7xl text-moroi-Realred self-start w-1/2 pb-3 container-sm antialiased">PRESENTATION</h1>
-		<h5 class="font-light text-lg lg:text-2xl antialiased">Nous faisons des modifications sur les fichiers que vous nous
-			avez envoyé, nos
+		<h5 class="font-light text-lg lg:text-2xl antialiased">Nos
 			tuning files respectent les contraintes et les normes mécaniques du constructeur et nos solutions sont testées sur
 			des voitures réelles dans nos garages, nous travaillons dans la reprogrammation depuis 2011 et nous utilisons un
 			matériels original de tuning électronique automobile.</h5>
@@ -454,31 +447,31 @@
 			<div @click="openTab = 1" :class="{ '': openTab === 1 }" class="mr-1">
 				<span :class="openTab === 1 ? activeClasses : inactiveClasses"
 					class=" font-semibold mb-2 "
-					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" inline src="/img/volkswagen.png" alt=""></span>
+					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/img/volkswagen.png" alt=""></span>
 			</div>
 
 			<div @click="openTab = 2" :class="{ '': openTab === 2 }" class="mr-1">
 				<span :class="openTab === 2 ? activeClasses : inactiveClasses"
 					class="font-semibold mb-2"
-					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" inline src="/img/BMW.png" alt=""></span>
+					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/img/BMW.png" alt=""></span>
 			</div>
 
 			<div @click="openTab = 3" :class="{ '': openTab === 3 }" class="mr-1">
 				<span :class="openTab === 3 ? activeClasses : inactiveClasses"
 					class="font-semibold mb-2 py-10 px-1"
-					><img class="h-12 mx-1 md:h-16 md:mx-4 lg:w-20 lg:mx-4" inline src="/img/audi.png" alt=""></span>
+					><img class="h-12 mx-1 md:h-16 md:mx-4 lg:w-20 lg:mx-4" src="/img/audi.png" alt=""></span>
 			</div>
 
 			<div @click="openTab = 4" :class="{ '': openTab === 4 }" class="mr-1">
 				<span :class="openTab === 4 ? activeClasses : inactiveClasses"
 					class="font-semibold mb-2"
-					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" inline src="/img/mercedes.png" alt=""></span>
+					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/img/mercedes.png" alt=""></span>
 			</div>
 
 			<div @click="openTab = 5" :class="{ '': openTab === 5 }" class="mr-1">
 				<span :class="openTab === 5 ? activeClasses : inactiveClasses"
 					class="font-semibold mb-2"
-					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" inline src="/img/skoda.png" alt=""></span>
+					><img class="w-8 h-8 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/img/skoda.png" alt=""></span>
 			</div>
 
 		</div>
@@ -489,7 +482,7 @@
 			<div x-show="openTab === 1" class="grid grid-cols-1 auto-cols-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center  divide-grayw-800 gap-2">
 
 				<div class="scale-in-hor-center grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 ele-1 rounded w-3/4">
-					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" inline src="/img/caddy.png" alt="">
+					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" src="/img/caddy.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -574,7 +567,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded px-2">
-					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" inline src="/img/polo.png" alt="">
+					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" src="/img/polo.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -659,7 +652,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded px-3">
-					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" inline src="/img/golf.png" alt="">
+					<img class="wow animate__animated animate__slideInRight animate__slow w-full h-auto place-self-center pt-1" src="/img/golf.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -744,7 +737,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft animate__slow w-full h-auto place-self-center pt-1" inline src="/img/volkswagen-tiguan.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft animate__slow w-full h-auto place-self-center pt-1" src="/img/volkswagen-tiguan.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -829,7 +822,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/volkswagen-touran.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/volkswagen-touran.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -914,7 +907,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/vw-passat-berlina.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/vw-passat-berlina.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1004,7 +997,7 @@
 			<div x-show="openTab === 2" class="grid grid-cols-1 auto-cols-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center  divide-grayw-800 gap-2">
 
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/bmw-x1.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/bmw-x1.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1089,7 +1082,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/bmw-x2.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/bmw-x2.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1174,7 +1167,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/bmw-x3.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/bmw-x3.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1259,7 +1252,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" inline src="/img/bmw-x5.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" src="/img/bmw-x5.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1344,7 +1337,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" inline src="/img/bmw-x6.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" src="/img/bmw-x6.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1429,7 +1422,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" inline src="/img/bmw-series-5.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1 px-3" src="/img/bmw-series-5.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1518,7 +1511,7 @@
 			<div x-show="openTab === 3" class="grid grid-cols-1 auto-cols-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center  divide-grayw-800 gap-2">
 
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-a1-sportback.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-a1-sportback.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1603,7 +1596,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-a3-sportback.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-a3-sportback.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1688,7 +1681,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-a4-sedan.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-a4-sedan.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1773,7 +1766,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded px-2">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-a6.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-a6.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1858,7 +1851,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-q3.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-q3.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -1943,7 +1936,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/audi-q5.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/audi-q5.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2032,7 +2025,7 @@
 
 			<div x-show="openTab === 4" class="grid grid-cols-1 auto-cols-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center  divide-grayw-800 gap-2">
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mb-glc-suv.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mb-glc-suv.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2117,7 +2110,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mercedes-benz-a-class.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mercedes-benz-a-class.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2202,7 +2195,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mercedes-benz-c-class-sedan-2018-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mercedes-benz-c-class-sedan-2018-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2287,7 +2280,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded px-2">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mercedes-benz-classe-e-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mercedes-benz-classe-e-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2372,7 +2365,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mercedes-benz-glb-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mercedes-benz-glb-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2457,7 +2450,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/mercedes-benz-glc-coupe-2019-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/mercedes-benz-glc-coupe-2019-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2546,7 +2539,7 @@
 			<div x-show="openTab === 5" class="grid grid-cols-1 auto-cols-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center divide-grayw-800 gap-2">
 
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/skoda-fabia-combi-2018-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/skoda-fabia-combi-2018-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2631,7 +2624,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/skoda-fabia.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/skoda-fabia.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2716,7 +2709,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/skoda-kamiq-suv.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/skoda-kamiq-suv.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2801,7 +2794,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/skoda-octavia-berlina-2020-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/skoda-octavia-berlina-2020-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2886,7 +2879,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" inline src="/img/skoda-scala-hatchback-2019-side-view.png" alt="">
+					<img class="wow animate__animated animate__slideInLeft w-full h-auto place-self-center pt-1" src="/img/skoda-scala-hatchback-2019-side-view.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -2971,7 +2964,7 @@
 				
 				</div>
 				<div class="grid grid-cols-1 grid-flow-row place-items-center place-content-between relative border-grayw-800 w-3/4 ele-1 rounded">
-					<img class="wow animate__animated animate__slideInLeftw-full h-auto place-self-center pt-1" inline src="/img/skoda-superb-2020-side-view-copia.png" alt="">
+					<img class="wow animate__animated animate__slideInLeftw-full h-auto place-self-center pt-1" src="/img/skoda-superb-2020-side-view-copia.png" alt="">
 					<div class="grid grid-rows-3 place-items-center place-content-stretch w-full">
 				
 						<div class="place-self-start text-grayw-500 pt-2 md:pt-5 pl-2"><span class="border rounded ele-1  border-grayw-800  px-1">2013</span> - <span class="border rounded ele-1 border-grayw-800  px-1">2020</span>
@@ -3199,7 +3192,7 @@
 		<div>
 
 			<div id="emplacment">
-				<div class="w-1/2 md:w-2/3 lg:w-full" id='map' style=' height: 400px;'></div>
+				<div class="w-full" id='map' style=' height: 400px;'></div>
 				<script>
 					mapboxgl.accessToken =
 						'pk.eyJ1IjoibW9yb2ktZ2EiLCJhIjoiY2tpZWFtZ2lkMTA0NzJ4bzV5ZXcxMzhyeCJ9.VQKi7xOYDoelM31se-dkEQ';
@@ -3215,65 +3208,6 @@
 				</script>
 			</div>
 		</div>
-
-
-					
-			<div class="bg-white absolute -top-12 right-1 lg:right-10 p-4 px-2 lg:px-8 rounded-md w-2/3 md:1/3 lg:w-1/4 min-h-full -mb-15 ele-1 z-10">
-				<h2 id="contacter" class="text-gray-700 py-2 lg:py-4">Contact us</h2>
-				<form class="w-full " action="https://api.web3forms.com/submit" method="POST">
-					<input type="hidden" name="apikey" value="3f772dd4-6e8b-4497-b263-0d2b612ced24">
-						<input type="hidden" name="redirect" value="http://127.0.0.1:5500/success.html">
-					 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-					 <input type="hidden" name="replyto" value="ka3kousa@gmail.com">
-					<div class="flex flex-wrap -mx-3">
-						<div class="w-full px-3 mb-6 md:mb-0">
-							<label class="block uppercase tracking-wide text-grayb-700 opacity-50 text-xs font-light mb-2"
-								for="grid-first-name" name="name">
-								Name :
-							</label>
-							<input
-								class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ele-1"
-								id="grid-first-name" type="text" placeholder="Jane">
-						</div>
-					</div>
-					<div class="flex flex-wrap -mx-3 mb-6">
-						<div class="w-full px-3">
-							<label class="block uppercase tracking-wide text-grayb-700 opacity-50 text-xs font-light mb-2"
-								for="grid-password">
-								E-mail :
-							</label>
-							<input
-								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ele-1"
-								id="email" type="email" name="_replyto">
-
-						</div>
-					</div>
-					<div class="flex flex-wrap -mx-3 mb-6">
-						<div class="w-full px-3">
-							<label class="block uppercase tracking-wide text-grayb-700 opacity-50 text-xs font-light mb-1 lg:mb-2"
-								for="grid-password">
-								Message :
-							</label>
-							<textarea
-								class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 min-h-full resize-none ele-1 pb-5 lg:pb-10"
-								id="message" name="message"></textarea>
-
-						</div>
-					</div>
-					<div>
-						<div class="md:flex md:items-center py-2 lg:py-4 ">
-							<div class="md:w-1/3 mx-auto py-6">
-								<button
-									class="mx-auto ele-1 bg-moroi-stack hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded-md rounded-tl-none rounded-bl-none ele-1 absolute bottom-4 -left-2"
-									type="submit">
-									Send Message
-								</button>
-							</div>
-							<div class="md:w-2/3"></div>
-						</div>
-					</div>
-				</form>	
-			</div>
 				
 
 
@@ -3285,22 +3219,22 @@
 		<div
 			class="mx-auto md:w-3/4 text-white text-opacity-75 gap-5 grid lg:grid-cols-3 auto-rows-auto lg:auto-cols-auto h-auto pt-10 pb-10 place-items-center place-content-between">
 
-			<div class="flex  flex-col  flex-wrap  justify-center lg:justify-start align-middle  gap-5 pt-10 pb-5">
-				<span class="prose prose">AUTO PERFORMANCE spécialisée en électronique de sécurité automobile et en reprogrammation moteur (chiptuning).</span>
+			<div class="flex flex-col  flex-wrap  justify-center lg:justify-start align-middle  gap-5 pt-10 pb-5">
+				<span class="proes px-4">AUTO PERFORMANCE spécialisée en électronique de sécurité automobile et en reprogrammation moteur (chiptuning).</span>
 				
 				<div class="flex flex-row justify-center align-middle">
 					<a href="https://www.facebook.com/" target="_blank"
 						class=" text-moroi-Realred flex w-10 h-10 mx-1 justify-center align-middle rounded-full bg-moroi-Realred hover:bg-opacity-75 transition-opacity ease-in">
-						<img inline src="/img/5f1cf0730ba49a4a68c61c36_facebook-icon.svg" width="16" alt="white Facebook icon"></a>
+						<img src="/img/5f1cf0730ba49a4a68c61c36_facebook-icon.svg" width="16" alt="white Facebook icon"></a>
 					<a href="https://www.instagram.com//" target="_blank"
 						class=" text-moroi-Realred flex w-10 h-10 mx-1 justify-center align-middle rounded-full bg-moroi-Realred hover:bg-opacity-75 transition-opacity ease-in"><img
-							inline src="/img/5f1cf0730ba49ab93dc61c38_instagram-icon.svg" width="13" alt="white Instagram Icon"></a>
+							src="/img/5f1cf0730ba49ab93dc61c38_instagram-icon.svg" width="13" alt="white Instagram Icon"></a>
 					<a href="https://www.linkedin.com/company//" target="_blank"
 						class=" text-moroi-Realred flex w-10 h-10 mx-1 justify-center align-middle rounded-full bg-moroi-Realred hover:bg-opacity-75 transition-opacity ease-in"><img
-							inline src="/img/5f1cf0730ba49aa2cfc61c37_linkedin-icon.svg" width="13" alt=""></a>
+							src="/img/5f1cf0730ba49aa2cfc61c37_linkedin-icon.svg" width="13" alt=""></a>
 					<a href="https://twitter.com/" target="_blank"
 						class=" text-moroi-Realred flex w-10 h-10 mx-1 justify-center align-middle rounded-full bg-moroi-Realred hover:bg-opacity-75 transition-opacity ease-in"><img
-							inline src="/img/5f448c24d06a89821ec6c977_twitter-icon.svg" width="15" alt="white LinkedIn icon"></a>
+							src="/img/5f448c24d06a89821ec6c977_twitter-icon.svg" width="15" alt="white LinkedIn icon"></a>
 				</div>
 			</div>
 
@@ -3311,7 +3245,7 @@
 </svg>
 <span>Email: info@auto-performance.org</span>
 </div>
-		<div class="flex flex-row flex-nowrap gap-2 justify-start">
+		<div id="phone" class="flex flex-row flex-nowrap gap-2 justify-start">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone-fill text-moroi-Realred" viewBox="0 0 16 16">
   <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
 </svg>
@@ -3335,8 +3269,8 @@
 						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate flex flex-"
 						target="_blank" novalidate>
 						<div class="flex  flex-col  flex-wrap  justify-center  content-center">
-							<div class=" m-0  p-0  text-3xl  text-white  antialiased  text-center">Obtenez nos <span class="text-moroi-Realred font-bold">mises à jour</span></div>
-							<div class=" m-0  p-0  text-xl  text-white  antialiased  text-center">Renseignez-vous sur les événements et autres actualités</div>
+							<div class=" m-0  p-0  text-xl lg:text-2xl  text-white  antialiased  text-center">Obtenez nos <span class="text-moroi-Realred font-bold text-xl lg:text-2xl">mises à jour</span></div>
+							
 							<div class=" mt-3  flex  flex-row  flex-wrap">
 								<input type="text" class=" text-gray-600  w-2/3  p-2  rounded-l-lg" placeholder="john@mail.com"/>
 								<input class=" p-2  w-1/3  bg-moroi-Realred  rounded-r-lg  text-white hover: hover:bg-moroi-Realred transition-opacity ease-in" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe"></input>
@@ -3372,11 +3306,11 @@
 
 
 
-	<script inline src="/js/main.js"></script>
-	<script inline src="/js/anime.min.js"></script>
-	<script inline src="/js/alpine.js"></script>
-	<script inline src="/js/swiper-bundle.min.js"></script>
-	<script inline src="/js/wow.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/anime.min.js"></script>
+	<script src="/js/alpine.js"></script>
+	<script src="/js/swiper-bundle.min.js"></script>
+	<script src="/js/wow.min.js"></script>
 	<script>
 new WOW().init();
 		
