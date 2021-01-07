@@ -45,16 +45,14 @@
 					</div>
 				</div>
 				<div class="flex items-center justify-between h-12 transition-opacity duration-150 ease-out fade-out container">
-					<div	class="absolute left-0 flex items-center justify-center w-full sm:justify-start sm:relative sm:left-auto sm:w-64">
-						<a href="https://auto-performance.org" class="md:hidden flex items-center inline-block py-2 pr-4 cursor-pointer group">
-							<img src="/img/Untitled-3@0,1x.png" alt="">
+					<div	class="absolute left-0 flex justify-start relative left-auto w-64">
+						<a href="https://auto-performance.org" class="md:w-auto flex items-center inline-block py-2 pr-4 cursor-pointer group">
+							<img src="/img/apr@0,25x.png" alt="">
 						</a>
-						<a href="https://auto-performance.org" class="hidden md:inline-block flex items-center inline-block py-2 pr-4 cursor-pointer group">
-							<img src="/img/Untitled-4@2x.png" alt="">
-						</a>
+						
 
 					
-		<div class="absolute top-0 left-0 z-20 flex items-center w-auto h-full ml-2 sm:relative sm:ml-0 sm:w-full">
+		<!-- <div class="absolute top-0 left-0 z-20 flex items-center w-auto h-full ml-2 sm:relative sm:ml-0 sm:w-full">
 							<div x-data="{ open : false }" x-on:click="open = !open" x-on:click.away="open = false"
 								class="relative flex items-center justify-start inline-block w-auto h-10 pl-5 text-gray-500 rounded-md cursor-pointer sm:w-full hover:text-gray-200 min-w-auto select-none ">
 								<span class="font-medium font-bold leading-none sm:text-sm ">More</span>
@@ -112,14 +110,14 @@
 								</div>
 							</div>
 
-						</div>
+		</div> -->
 					</div>
 					
 
 
 
 
-					<div class="absolute right-0 top-2 grid grid-rows-1 md:grid-rows-2 place-content-center place-items-center gap-2 w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
+					<div class="absolute right-0 top-2 grid grid-rows-1 place-content-center place-items-center w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
 
 					<div id="nav_right_container"
 						class="flex items-center justify-end w-32 mr-2 sm:w-80 sm:mr-0 sm:relative sm:right-auto">
@@ -154,9 +152,7 @@
 							data-wow-duration="2s" data-wow-delay="1s">Nous contacter
 						</a>
 					</div>
-					<div class=" sm:mr-0 sm:relative sm:right-auto hidden md:inline-block text-white font-semibold">
-								Tel : +213 0 670-16-80-60 
-					</div>
+					
 
 				</div>
 				</div>
@@ -171,8 +167,15 @@
 								<a href="#faq" class="p-2  hover:text-gray-100 md:text-sm lg:text-base">FAQ</a>
 								<a href="#brands" class="p-2 hover:text-gray-100 md:text-sm lg:text-base">MARQUES</a>
 							</div>
+							<div class="sm:relative right-auto hidden md:inline-block text-white font-semibold flex">
+								<span></span>
+								<a href="https://wa.me/+213770646180/">Tel : +213 670 16 80 60</a>
+							 
 						</div>
+						</div>
+						
 					</div>
+					
 				</div>
 
 			</div>
@@ -3249,7 +3252,8 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone-fill text-moroi-Realred" viewBox="0 0 16 16">
   <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
 </svg>
-<span>Tel : +213 793-22-40-70 / 0 670-16-80-60</span>
+<span>Tel :<a href="https://wa.me/+213770646180/"> +213 0 770 64 61 80</a> / 0 670-16-80-60</span>
+
 </div>
 				<div class="flex flex-row flex-nowrap gap-2 justify-start">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt text-moroi-Realred" viewBox="0 0 16 16">
@@ -3305,9 +3309,6 @@
 
 
 
-
-	<script src="/js/main.js"></script>
-	<script src="/js/anime.min.js"></script>
 	<script src="/js/alpine.js"></script>
 	<script src="/js/swiper-bundle.min.js"></script>
 	<script src="/js/wow.min.js"></script>
@@ -3331,6 +3332,23 @@ new WOW().init();
       spaceBetween: 2,
 		});
 	</script>
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "2112375315709404", // Facebook page ID
+            whatsapp: "+213770646180", // WhatsApp number
+            call_to_action: "Nous contacter", // Call to action
+            button_color: "#A8CE50", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp", // Order of buttons
+            pre_filled_message: "Auto performance Web", // WhatsApp pre-filled message
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static.getbutton.io/widget-send-button/js/init.js" + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 
 </html>
