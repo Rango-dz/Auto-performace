@@ -2,9 +2,7 @@
 	--iconsvg: #1a1a1b;
 }
 
-body {
-	scroll-behavior: smooth;
-	@font-face {
+@font-face {
 	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
 	src: url(css/Gilroy.otf) format('otf');
 	src: url(css/Gilroy-Light.otf)format('otf');
@@ -13,6 +11,10 @@ body {
 	src: url(css/EuclidFlex-Medium.woff) format('woff');
 	src: url(css/EuclidFlex-Medium.woff2) format('woff');
 	}
+
+body {
+	scroll-behavior: smooth;
+	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
 }
 
 
