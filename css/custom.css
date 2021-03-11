@@ -3,18 +3,18 @@
 }
 
 @font-face {
-	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
-	src: url(css/Gilroy.otf) format('otf');
-	src: url(css/Gilroy-Light.otf)format('otf');
-	src: url(css/EuclidFlex-Medium.eot) format('eot');
-	src: url(css/EuclidFlex-Medium.ttf) format('ttf');
-	src: url(css/EuclidFlex-Medium.woff) format('woff');
-	src: url(css/EuclidFlex-Medium.woff2) format('woff');
-	}
+    font-family: 'EuclidFlexMedium';
+    src: url('fonts/EuclidFlexMedium.eot');
+    src: url('fonts/EuclidFlexMedium.eot') format('embedded-opentype'),
+         url('fonts/EuclidFlexMedium.woff2') format('woff2'),
+         url('fonts/EuclidFlexMedium.woff') format('woff'),
+         url('fonts/EuclidFlexMedium.ttf') format('truetype'),
+         url('fonts/EuclidFlexMedium.svg#EuclidFlexMedium') format('svg');
+}
 
 body {
 	scroll-behavior: smooth;
-	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
+	font-family: 'EuclidFlexMedium';
 }
 
 
