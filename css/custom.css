@@ -4,12 +4,14 @@
 
 body {
 	scroll-behavior: smooth;
+	
 }
 
 @font-face {
-	font-family: Gilroy, Gilroy-light, monospace;
+	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
 	src: url(/public/css/Gilroy.otf);
 	src: url(/public/css/Gilroy-Light.otf);
+	src: url(/public/css/EuclidFlex-Medium.woff2);
 }
 
 .ele-1 {
