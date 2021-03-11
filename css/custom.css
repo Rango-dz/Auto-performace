@@ -4,10 +4,7 @@
 
 body {
 	scroll-behavior: smooth;
-	
-}
-
-@font-face {
+	@font-face {
 	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
 	src: url(css/Gilroy.otf) format('otf');
 	src: url(css/Gilroy-Light.otf)format('otf');
@@ -15,7 +12,10 @@ body {
 	src: url(css/EuclidFlex-Medium.ttf) format('ttf');
 	src: url(css/EuclidFlex-Medium.woff) format('woff');
 	src: url(css/EuclidFlex-Medium.woff2) format('woff');
+	}
 }
+
+
 
 .ele-1 {
 	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2),
