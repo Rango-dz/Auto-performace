@@ -11,6 +11,9 @@ body {
 	font-family: EuclidFlex, Gilroy, Gilroy-light, monospace;
 	src: url(css/Gilroy.otf);
 	src: url(css/Gilroy-Light.otf);
+	src: url(css/EuclidFlex-Medium.eot);
+	src: url(css/EuclidFlex-Medium.ttf);
+	src: url(css/EuclidFlex-Medium.woff);
 	src: url(css/EuclidFlex-Medium.woff2);
 }
 
