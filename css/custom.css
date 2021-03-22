@@ -1,23 +1,46 @@
 :root {
-	--iconsvg: #1a1a1b;
+--iconsvg: #1a1a1b;
 }
 
 @font-face {
-    font-family: 'EuclidFlexMedium';
-    src: url('fonts/EuclidFlexMedium.eot');
-    src: url('fonts/EuclidFlexMedium.eot') format('embedded-opentype'),
-         url('fonts/EuclidFlexMedium.woff2') format('woff2'),
-         url('fonts/EuclidFlexMedium.woff') format('woff'),
-         url('fonts/EuclidFlexMedium.ttf') format('truetype'),
-         url('fonts/EuclidFlexMedium.svg#EuclidFlexMedium') format('svg');
+    font-family: "euclid_circular_a";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://auto-performance.org/css/01ee76670976cbb03b0471232b0ac325.woff) format("woff"),url(https://auto-performance.org/css/c2498c53f87a51a60540c93f3b6263eb.woff2) format("woff2")
 }
 
+
+@font-face {
+    font-family: "euclid_circular_a";
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://auto-performance.org/css/f345826aae8045a92ea382939e0120b6.woff) format("woff"),url(https://auto-performance.org/css/e0503831be2d0cd754ea87513b7fdaad.woff2) format("woff2")
+}
+
+
+@font-face {
+    font-family: "euclid_circular_a";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://auto-performance.org/css/c36444ea49a76eac4a23f64f282f9488.woff) format("woff"),url(https://auto-performance.org/css/fbedb8083671fc32e4636789b434c580.woff2) format("woff2")
+}
+
+
+
+@font-face {
+    font-family: "euclid_circular_a";
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://auto-performance.org/css/d0b6e00d2c8ee39f15a7b33e84533774.woff) format("woff"),url(https://auto-performance.org/css/e40abc462ea13d980de1f365ec375ef0.woff2) format("woff2")
+}
+
+	
 body {
-	scroll-behavior: smooth;
-	font-family: 'EuclidFlexMedium';
+font-family: "euclid_circular_a","Source Sans Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+scroll-behavior: smooth;
 }
-
-
 
 .ele-1 {
 	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2),
